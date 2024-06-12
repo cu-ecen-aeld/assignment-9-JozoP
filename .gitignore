@@ -2,4 +2,5 @@
 build/
 .vscode/
 *.log
-conf/*
+./conf/*
+conf/requires-ssh-key
