@@ -10,6 +10,11 @@ LDD_MODULE_SUBDIRS += scull/
 
 define LDD_INSTALL_TARGET_CMDS
 
+	$(INSTALL) -d $(TARGET_DIR)/lib
+	$(INSTALL) -m 0644 $(@D)/misc-modules/faulty.ko $(TARGET_DIR)/lib/
+	$(INSTALL) -m 0644 $(@D)/misc-modules/hello.ko $(TARGET_DIR)/lib/
+	$(INSTALL) -m 0644 $(@D)/scull/scull.ko $(TARGET_DIR)/lib/
+
 	$(INSTALL) -m 0755 $(@D)/misc-modules/module_load $(TARGET_DIR)/usr/bin
 	$(INSTALL) -m 0755 $(@D)/misc-modules/module_unload $(TARGET_DIR)/usr/bin
 	$(INSTALL) -m 0755 $(@D)/scull/scull_load $(TARGET_DIR)/usr/bin
