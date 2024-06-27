@@ -1,4 +1,4 @@
-AESD_CHAR_VERSION = '6e3293e856195e10ac221fc07ec43035db48e2de'
+AESD_CHAR_VERSION = 'afaf08b630bbea6019aa5195f11f03cb2bb6113e'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
